@@ -9,11 +9,11 @@ const { count, inc, dec } = useCounter(props.initial)
 <template>
   <div>
     {{ count }}
-    <button class="inc" @click="inc()">
+    <va-button color="primary" class="inc px-2rem" @click="inc()">
       +
-    </button>
-    <button class="dec" @click="dec()">
+    </va-button>
+    <va-button color="danger" class="dec px-2rem" @click="dec()">
       -
-    </button>
+    </va-button>
   </div>
 </template>

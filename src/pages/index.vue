@@ -53,6 +53,7 @@ const { t } = useI18n()
         {{ t('button.go') }}
       </button>
     </div>
+    <Counter />
   </div>
 </template>
 
