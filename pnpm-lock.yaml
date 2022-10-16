@@ -17,7 +17,7 @@ specifiers:
   cypress: ^10.9.0
   eslint: ^8.25.0
   eslint-plugin-cypress: ^2.12.1
-  histoire: ^0.11.4
+  histoire: ^0.11.5
   https-localhost: ^4.7.1
   markdown-it-link-attributes: ^4.0.1
   markdown-it-shiki: ^0.5.1
@@ -59,7 +59,7 @@ dependencies:
 
 devDependencies:
   '@antfu/eslint-config': 0.27.0_z4bbprzjrhnsfa24uvmcbu7f5q
-  '@histoire/plugin-vue': 0.11.4_xb2ml2s42n5bw4qxlkoha4up6y
+  '@histoire/plugin-vue': 0.11.4_l5yexh64cpntojefhg6evxhkqi
   '@iconify-json/carbon': 1.1.8
   '@intlify/vite-plugin-vue-i18n': 6.0.3_vite@3.1.6+vue-i18n@9.2.2
   '@types/markdown-it-link-attributes': 3.0.1
@@ -71,7 +71,7 @@ devDependencies:
   cypress: 10.9.0
   eslint: 8.25.0
   eslint-plugin-cypress: 2.12.1_eslint@8.25.0
-  histoire: 0.11.4_vite@3.1.6
+  histoire: 0.11.5_vite@3.1.6
   https-localhost: 4.7.1
   markdown-it-link-attributes: 4.0.1
   markdown-it-shiki: 0.5.1
@@ -1482,12 +1482,12 @@ packages:
     resolution: {integrity: sha512-k2Ty1JcVojjJFwrg/ThKi2ujJ7XNLYaFGNB/bWT9wGR+oSMJHMa5w+CUq6p/pVrKeNNgA7pCqEcjSnHVoqJQFw==}
     dev: true
 
-  /@histoire/app/0.11.4_vite@3.1.6:
-    resolution: {integrity: sha512-gxNj4ef8ed56RQZ1YbkFPANzzHGbDXa8XP2824vxlbs70uFqNzVExgzLn8dtyXe3QZQeE4imMIDdxyGB/KMILw==}
+  /@histoire/app/0.11.5_vite@3.1.6:
+    resolution: {integrity: sha512-qkcesIiJat7bjw7Tz5olFq1JTGOP5tVV5+ZO8UCkZsrgf+eadfLPMYNs7X6XUUTwsh4pZlUoQpwqTjau0CUa8A==}
     dependencies:
-      '@histoire/controls': 0.11.4
-      '@histoire/shared': 0.11.4_vite@3.1.6
-      '@histoire/vendors': 0.11.4
+      '@histoire/controls': 0.11.5
+      '@histoire/shared': 0.11.5_vite@3.1.6
+      '@histoire/vendors': 0.11.5
       '@types/flexsearch': 0.7.3
       flexsearch: 0.7.21
       shiki: 0.10.1
@@ -1508,7 +1508,20 @@ packages:
       '@histoire/vendors': 0.11.4
     dev: true
 
-  /@histoire/plugin-vue/0.11.4_xb2ml2s42n5bw4qxlkoha4up6y:
+  /@histoire/controls/0.11.5:
+    resolution: {integrity: sha512-DwSHDRcAoGpgAyTcjcwPfL+yybY3q5HJITDL8Y6MWkG1blQMKcwukZhEv9WDGp6QxABrZzsSKuamKJdXRLpE5w==}
+    dependencies:
+      '@codemirror/commands': 6.1.2
+      '@codemirror/lang-json': 6.0.0
+      '@codemirror/language': 6.2.1
+      '@codemirror/lint': 6.0.0
+      '@codemirror/state': 6.1.2
+      '@codemirror/theme-one-dark': 6.1.0
+      '@codemirror/view': 6.3.1
+      '@histoire/vendors': 0.11.5
+    dev: true
+
+  /@histoire/plugin-vue/0.11.4_l5yexh64cpntojefhg6evxhkqi:
     resolution: {integrity: sha512-Mz08gzLHVE2KCa1bC2c7Mc5WWQmrjO6naeR+HgcGCF2yov5/Fgos2Mb4r+MmZYtK5SHyiaJ4GHWd3VWs8ZbTOg==}
     peerDependencies:
       histoire: ^0.11.4
@@ -1517,7 +1530,7 @@ packages:
       '@histoire/controls': 0.11.4
       '@histoire/shared': 0.11.4_vite@3.1.6
       '@histoire/vendors': 0.11.4
-      histoire: 0.11.4_vite@3.1.6
+      histoire: 0.11.5_vite@3.1.6
       vue: 3.2.40
     transitivePeerDependencies:
       - vite
@@ -1536,8 +1549,25 @@ packages:
       vite: 3.1.6
     dev: true
 
+  /@histoire/shared/0.11.5_vite@3.1.6:
+    resolution: {integrity: sha512-vB52GhgzRLuCSPlG0dufKIUAybVHhaZC6AWaGndjlvebo4pQwgeh89oUchDx2rT1fkhisqSVD/iq8/zQpCTAfw==}
+    peerDependencies:
+      vite: ^2.9.0 || ^3.0.0
+    dependencies:
+      '@types/fs-extra': 9.0.13
+      '@types/markdown-it': 12.2.3
+      chokidar: 3.5.3
+      pathe: 0.2.0
+      picocolors: 1.0.0
+      vite: 3.1.6
+    dev: true
+
   /@histoire/vendors/0.11.4:
     resolution: {integrity: sha512-jm6ARjSDqHlhyhvymagFTNObTiTXTQDZfapaLh5trecY9iOGO0YUEx/RlJ8g06mqm7h1iEZS7Qltsz1p0J9B+Q==}
+    dev: true
+
+  /@histoire/vendors/0.11.5:
+    resolution: {integrity: sha512-Nqvm9CMHKIQM3fHdvI8Wj3GMRkBglI1fmTvtvfWBFIHfE/C4LD5cAC7SDxvJZi/IFm9RRzq9sOW/1fAazIbfAw==}
     dev: true
 
   /@humanwhocodes/config-array/0.10.5:
@@ -5250,16 +5280,16 @@ packages:
       tslib: 2.4.0
     dev: true
 
-  /histoire/0.11.4_vite@3.1.6:
-    resolution: {integrity: sha512-lbhwD/g9dninwn+jp8TLvE9lhji8HH/SabY32R+oX0g9y7NyT8SOO08ebmv7yEPzxpNMPiyX/CcNISaGpYyM7A==}
+  /histoire/0.11.5_vite@3.1.6:
+    resolution: {integrity: sha512-+27sEYAd45g8LUbnsJZHbnNrXsIV9CMoT7S+Mb6OiCTOKFCOUVO96XwRRPtSLDbmcouIsc4VVcqsLCJX7ol/9w==}
     hasBin: true
     peerDependencies:
       vite: ^2.9.0 || ^3.0.0
     dependencies:
-      '@histoire/app': 0.11.4_vite@3.1.6
-      '@histoire/controls': 0.11.4
-      '@histoire/shared': 0.11.4_vite@3.1.6
-      '@histoire/vendors': 0.11.4
+      '@histoire/app': 0.11.5_vite@3.1.6
+      '@histoire/controls': 0.11.5
+      '@histoire/shared': 0.11.5_vite@3.1.6
+      '@histoire/vendors': 0.11.5
       '@types/flexsearch': 0.7.3
       '@types/markdown-it': 12.2.3
       birpc: 0.1.1
